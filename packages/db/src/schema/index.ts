@@ -32,3 +32,5 @@ export { activityLog } from "./activity_log.js";
 export { companySecrets } from "./company_secrets.js";
 export { companySecretVersions } from "./company_secret_versions.js";
 export { contacts } from "./contacts.js";
+export { invoices } from "./invoices.js";
+export type { InvoiceLineItem } from "./invoices.js";

@@ -127,6 +127,20 @@ export {
 } from "./asset.js";
 
 export {
+  INVOICE_TYPES,
+  INVOICE_STATUSES,
+  SWISS_VAT_RATE_BPS,
+  invoiceLineItemSchema,
+  createInvoiceSchema,
+  updateInvoiceSchema,
+  listInvoicesQuerySchema,
+  type InvoiceLineItemInput,
+  type CreateInvoice,
+  type UpdateInvoice,
+  type ListInvoicesQuery,
+} from "./invoice.js";
+
+export {
   createCompanyInviteSchema,
   createOpenClawInvitePromptSchema,
   acceptInviteSchema,

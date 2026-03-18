@@ -1,5 +1,6 @@
 export type { Company } from "./company.js";
-export type { Contact, PortalData, PortalIssue, PortalProject } from "./contact.js";
+export type { Contact, PortalData, PortalIssue, PortalProject, PortalInvoice } from "./contact.js";
+export type { Invoice, InvoiceLineItem, InvoiceType, InvoiceStatus } from "./invoice.js";
 export type {
   Agent,
   AgentPermissions,

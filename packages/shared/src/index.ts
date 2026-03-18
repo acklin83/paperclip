@@ -270,7 +270,7 @@ export {
   type SecretsLocalEncryptedConfig,
   type ConfigMeta,
 } from "./config-schema.js";
-export type { Contact, PortalData, PortalIssue, PortalProject } from "./types/contact.js";
+export type { Contact, PortalData, PortalIssue, PortalProject, PortalInvoice } from "./types/contact.js";
 export {
   createContactSchema,
   updateContactSchema,
@@ -279,3 +279,18 @@ export {
   type UpdateContact,
   type GeneratePortalToken,
 } from "./validators/contact.js";
+
+export type { Invoice, InvoiceLineItem, InvoiceType, InvoiceStatus } from "./types/invoice.js";
+export {
+  INVOICE_TYPES,
+  INVOICE_STATUSES,
+  SWISS_VAT_RATE_BPS,
+  invoiceLineItemSchema,
+  createInvoiceSchema,
+  updateInvoiceSchema,
+  listInvoicesQuerySchema,
+  type InvoiceLineItemInput,
+  type CreateInvoice,
+  type UpdateInvoice,
+  type ListInvoicesQuery,
+} from "./validators/invoice.js";

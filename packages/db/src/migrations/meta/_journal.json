@@ -190,6 +190,13 @@
       "when": 1742334000000,
       "tag": "0026_client_portal_contacts",
       "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1742421600000,
+      "tag": "0027_invoice_quote_model",
+      "breakpoints": true
     }
   ]
 }
