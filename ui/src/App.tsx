@@ -28,6 +28,8 @@ import { NewAgent } from "./pages/NewAgent";
 import { AuthPage } from "./pages/Auth";
 import { BoardClaimPage } from "./pages/BoardClaim";
 import { InviteLandingPage } from "./pages/InviteLanding";
+import { Contacts } from "./pages/Contacts";
+import { ClientPortalPage } from "./pages/ClientPortal";
 import { queryKeys } from "./lib/queryKeys";
 import { useCompany } from "./context/CompanyContext";
 import { useDialog } from "./context/DialogContext";
@@ -129,6 +131,7 @@ function boardRoutes() {
       <Route path="inbox" element={<Navigate to="/inbox/new" replace />} />
       <Route path="inbox/new" element={<Inbox />} />
       <Route path="inbox/all" element={<Inbox />} />
+      <Route path="contacts" element={<Contacts />} />
       <Route path="design-guide" element={<DesignGuide />} />
     </>
   );
@@ -209,6 +212,7 @@ export function App() {
         <Route path="auth" element={<AuthPage />} />
         <Route path="board-claim/:token" element={<BoardClaimPage />} />
         <Route path="invite/:token" element={<InviteLandingPage />} />
+        <Route path="portal/:token" element={<ClientPortalPage />} />
 
         <Route element={<CloudAccessGate />}>
           <Route index element={<CompanyRootRedirect />} />

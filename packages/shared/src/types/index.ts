@@ -1,4 +1,5 @@
 export type { Company } from "./company.js";
+export type { Contact, PortalData, PortalIssue, PortalProject } from "./contact.js";
 export type {
   Agent,
   AgentPermissions,

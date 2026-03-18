@@ -270,3 +270,12 @@ export {
   type SecretsLocalEncryptedConfig,
   type ConfigMeta,
 } from "./config-schema.js";
+export type { Contact, PortalData, PortalIssue, PortalProject } from "./types/contact.js";
+export {
+  createContactSchema,
+  updateContactSchema,
+  generatePortalTokenSchema,
+  type CreateContact,
+  type UpdateContact,
+  type GeneratePortalToken,
+} from "./validators/contact.js";

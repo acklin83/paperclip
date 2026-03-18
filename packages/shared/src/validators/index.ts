@@ -113,6 +113,15 @@ export {
 } from "./cost.js";
 
 export {
+  createContactSchema,
+  updateContactSchema,
+  generatePortalTokenSchema,
+  type CreateContact,
+  type UpdateContact,
+  type GeneratePortalToken,
+} from "./contact.js";
+
+export {
   createAssetImageMetadataSchema,
   type CreateAssetImageMetadata,
 } from "./asset.js";
